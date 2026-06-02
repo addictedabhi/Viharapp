@@ -30,7 +30,7 @@
       ],
       "lat": 24.5979191,
       "lng": 74.7291541,
-      "geocodeStatus": "ok"
+      "geocodeStatus": "manual"
     },
     {
       "zone": "01-मेवाड़-अंचल",
@@ -63,7 +63,7 @@
       ],
       "lat": 24.578721,
       "lng": 73.6862571,
-      "geocodeStatus": "ok"
+      "geocodeStatus": "manual"
     },
     {
       "zone": "01-मेवाड़-अंचल",
@@ -95,7 +95,7 @@
       ],
       "lat": 25.470994,
       "lng": 74.6961316,
-      "geocodeStatus": "ok"
+      "geocodeStatus": "manual"
     },
     {
       "zone": "01-मेवाड़-अंचल",
@@ -127,7 +127,7 @@
       ],
       "lat": 24.7171578,
       "lng": 74.4718129,
-      "geocodeStatus": "ok"
+      "geocodeStatus": "manual"
     },
     {
       "zone": "02-बीकानेर-मारवाड़-अंचल",
@@ -172,7 +172,7 @@
       ],
       "lat": 28.0159286,
       "lng": 73.3171367,
-      "geocodeStatus": "ok"
+      "geocodeStatus": "manual"
     },
     {
       "zone": "02-बीकानेर-मारवाड़-अंचल",
@@ -211,7 +211,7 @@
       ],
       "lat": 27.9745126,
       "lng": 73.2951629,
-      "geocodeStatus": "ok"
+      "geocodeStatus": "manual"
     },
     {
       "zone": "02-बीकानेर-मारवाड़-अंचल",
@@ -237,7 +237,7 @@
       ],
       "lat": 24.8239667,
       "lng": 73.6563778,
-      "geocodeStatus": "ok"
+      "geocodeStatus": "manual"
     },
     {
       "zone": "02-बीकानेर-मारवाड़-अंचल",
@@ -263,7 +263,7 @@
       ],
       "lat": 27.7489866,
       "lng": 73.3718301,
-      "geocodeStatus": "ok"
+      "geocodeStatus": "manual"
     },
     {
       "zone": "02-बीकानेर-मारवाड़-अंचल",
@@ -295,7 +295,7 @@
       ],
       "lat": 26.8559681,
       "lng": 73.7402772,
-      "geocodeStatus": "ok"
+      "geocodeStatus": "manual"
     },
     {
       "zone": "02-बीकानेर-मारवाड़-अंचल",
@@ -328,7 +328,7 @@
       ],
       "lat": 29.9608836,
       "lng": 74.9645662,
-      "geocodeStatus": "ok"
+      "geocodeStatus": "manual"
     },
     {
       "zone": "03-जयपुर-ब्यावर-अंचल",
@@ -358,7 +358,7 @@
       ],
       "lat": 26.0992137,
       "lng": 74.3127044,
-      "geocodeStatus": "ok"
+      "geocodeStatus": "manual"
     },
     {
       "zone": "03-जयपुर-ब्यावर-अंचल",
@@ -386,7 +386,7 @@
       ],
       "lat": 25.046606,
       "lng": 83.7920943,
-      "geocodeStatus": "ok"
+      "geocodeStatus": "manual"
     },
     {
       "zone": "03-जयपुर-ब्यावर-अंचल",
@@ -418,7 +418,7 @@
       ],
       "lat": 26.9154576,
       "lng": 75.8189817,
-      "geocodeStatus": "ok"
+      "geocodeStatus": "manual"
     },
     {
       "zone": "04-मध्य-प्रदेश-अंचल",
@@ -450,7 +450,7 @@
       ],
       "lat": 23.50222,
       "lng": 74.9551534,
-      "geocodeStatus": "ok"
+      "geocodeStatus": "manual"
     },
     {
       "zone": "04-मध्य-प्रदेश-अंचल",
@@ -480,7 +480,7 @@
       ],
       "lat": 22.6666672,
       "lng": 75.749998,
-      "geocodeStatus": "ok"
+      "geocodeStatus": "manual"
     },
     {
       "zone": "04-मध्य-प्रदेश-अंचल",
@@ -506,7 +506,7 @@
       ],
       "lat": 23.1885131,
       "lng": 75.7716562,
-      "geocodeStatus": "ok"
+      "geocodeStatus": "manual"
     },
     {
       "zone": "05-छत्तीसगढ़-उड़ीसा-अंचल",
@@ -538,7 +538,7 @@
       ],
       "lat": 21.0964906,
       "lng": 81.029154,
-      "geocodeStatus": "ok"
+      "geocodeStatus": "manual"
     },
     {
       "zone": "05-छत्तीसगढ़-उड़ीसा-अंचल",
@@ -570,7 +570,7 @@
       ],
       "lat": 21.1982964,
       "lng": 81.4007922,
-      "geocodeStatus": "ok"
+      "geocodeStatus": "manual"
     },
     {
       "zone": "06-कर्नाटक-आंध्रप्रदेश-अंचल",
@@ -600,7 +600,7 @@
       ],
       "lat": 12.9874289,
       "lng": 77.5541838,
-      "geocodeStatus": "ok"
+      "geocodeStatus": "manual"
     },
     {
       "zone": "07-तमिलनाडु-अंचल",
@@ -631,7 +631,7 @@
       ],
       "lat": 13.049207,
       "lng": 80.2242829,
-      "geocodeStatus": "ok"
+      "geocodeStatus": "manual"
     },
     {
       "zone": "08-मुंबई-गुजरात-अंचल",
@@ -662,7 +662,7 @@
       ],
       "lat": 19.054999,
       "lng": 72.8692035,
-      "geocodeStatus": "ok"
+      "geocodeStatus": "manual"
     },
     {
       "zone": "08-मुंबई-गुजरात-अंचल",
@@ -694,7 +694,7 @@
       ],
       "lat": 23.0215374,
       "lng": 72.5800568,
-      "geocodeStatus": "ok"
+      "geocodeStatus": "manual"
     },
     {
       "zone": "09-महाराष्ट्र-खानदेश-विदर्भ-अंचल",
@@ -728,7 +728,7 @@
       ],
       "lat": 21.1569338,
       "lng": 79.1102582,
-      "geocodeStatus": "ok"
+      "geocodeStatus": "manual"
     },
     {
       "zone": "10-बंगाल-बिहार-नेपाल-भूटान-अंचल",
@@ -760,7 +760,7 @@
       ],
       "lat": 25.6547708,
       "lng": 88.1510592,
-      "geocodeStatus": "ok"
+      "geocodeStatus": "manual"
     },
     {
       "zone": "12-दिल्ली-पंजाब-हरियाणा-उत्तरी-अंचल",
@@ -791,7 +791,7 @@
       ],
       "lat": 28.4031478,
       "lng": 77.3105561,
-      "geocodeStatus": "ok"
+      "geocodeStatus": "manual"
     },
     {
       "zone": "12-दिल्ली-पंजाब-हरियाणा-उत्तरी-अंचल",
@@ -823,7 +823,7 @@
       ],
       "lat": 28.943402,
       "lng": 77.2193369,
-      "geocodeStatus": "ok"
+      "geocodeStatus": "manual"
     }
   ]
 }
