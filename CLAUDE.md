@@ -11,6 +11,12 @@ A free-hosted Hindi (Devanagari) directory of Jain sadhu/sadhvi vihar (travel/st
 
 Design/spec/plan live in `docs/superpowers/`. Deploy runbook: `docs/DEPLOY.md`. Visual system: `DESIGN-tesla.md` (Tesla-minimal: white, single accent `#3E6AE1`, flat, 4px radius) paired with Noto Sans Devanagari for Hindi.
 
+## Deployment status
+
+Both targets are **live** (deployed 2026-06-02). The Worker `sadhumargi-upload` is deployed with both KV namespaces bound and all four secrets set; the full upload → parse → geocode → commit pipeline is verified end-to-end. The repo is `addictedabhi/Sadhumargi_app`, branch `main`. The Worker's `workers.dev` URL is **deliberately not recorded in the repo** — it is the only access protection (spec §7: never link it anywhere public). It lives only in Cloudflare and the maintainer's notes.
+
+**Deploy gotcha (most likely failure):** the upload UI showing `प्रकाशन विफल` means the GitHub commit step failed — almost always `403 Resource not accessible by personal access token`, i.e. the `GITHUB_TOKEN` fine-grained PAT is missing **Contents: Read and write** on this repo. Fix = regenerate the token with that permission, then `npx wrangler secret put GITHUB_TOKEN` (no redeploy). Diagnose live with `npx wrangler tail`. Each successful upload makes **3 commits** (one PUT per file: `data.json`, `meta.json`, `source.xlsx`) — by design, not a bug. See `docs/DEPLOY.md` §E.
+
 ## Commands
 
 All from the repo root unless noted. Vitest config lives at the root and covers root, `shared/`, `assets/`, and `worker/` tests (`worker/` has no local vitest — it uses the root one).

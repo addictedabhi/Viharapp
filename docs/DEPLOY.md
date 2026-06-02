@@ -47,3 +47,17 @@
 - `xlsx` (SheetJS) 0.18.5 from npm has known dependency advisories (ReDoS/prototype
   pollution). Exposure is limited: only the authenticated admin uploads files to the
   parser. To eliminate, install SheetJS from their official CDN/tarball per their docs.
+
+## E. Troubleshooting
+- **"प्रकाशन विफल" (publish failed) on upload** = the GitHub commit step failed, not
+  parse/geocode. See the real error with `npx wrangler tail --format pretty`, then retry.
+- **`403 Resource not accessible by personal access token`** = `GITHUB_TOKEN` lacks
+  **Contents: Read and write** (or the fine-grained token is not granted to this repo).
+  Fix: regenerate the fine-grained token — Resource owner = repo owner, Repository
+  access = *Only select repositories* → this repo, Permissions → **Contents: Read and
+  write**. Then `npx wrangler secret put GITHUB_TOKEN`. No redeploy — the secret is
+  picked up live. Retry the upload.
+- `401` on commit = token expired/invalid (not a permission problem). A `404` on the
+  PUT can mask a 403 when a fine-grained token is not authorized for the repo.
+- Each successful upload makes **3 commits** (one PUT per file: `data.json`,
+  `meta.json`, `source.xlsx`) — cosmetic, by design.

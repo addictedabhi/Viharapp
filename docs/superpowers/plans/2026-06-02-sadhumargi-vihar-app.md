@@ -1,5 +1,11 @@
 # Sadhumargi Vihar Directory App — Implementation Plan
 
+> **Status: SHIPPED (2026-06-02).** All phases implemented; both deploy targets live.
+> GitHub Pages serves the public site; the Cloudflare Worker (`sadhumargi-upload`,
+> KV bound, 4 secrets set) parses → geocodes → commits successfully. Full pipeline
+> verified end-to-end (26 groups / 99 members). Worker URL is unlisted — kept out of
+> this file by design. See Phase 10 §E for the one deploy snag hit (token 403).
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Build a free-hosted Hindi directory app — public GitHub Pages table + OpenStreetMap pages (Tesla-inspired UI), fed by a password-protected Cloudflare Worker that parses an uploaded Excel, geocodes places, and commits the dataset back to the repo.
@@ -2686,6 +2692,20 @@ git commit -m "feat: add seed build script and publish initial dataset"
 - Login is rate-limited (5 / 15 min per IP); sessions are signed, HttpOnly, 2h.
 - The public repo contains only published data (incl. public phone numbers — by
   design for this community directory).
+
+## E. Troubleshooting
+- **"प्रकाशन विफल" (publish failed) on upload** = the GitHub commit step failed,
+  not parse/geocode. Tail the Worker to see the real error:
+  `npx wrangler tail --format pretty`.
+- **`403 Resource not accessible by personal access token`** = the GITHUB_TOKEN
+  lacks **Contents: Read and write** (or the fine-grained token is not granted to
+  this repo). Regenerate the token with Contents:write on this repo only, then
+  `npx wrangler secret put GITHUB_TOKEN` — no redeploy needed, secret is live.
+- `401` (not 403) on commit = token expired/invalid. `404` masking a 403 =
+  fine-grained token not authorized for the repo. Repo/branch existence is not the
+  cause if the public site already loads.
+- Each successful upload produces **3 commits** (one PUT per file: data.json,
+  meta.json, source.xlsx) — cosmetic, by design, not a bug.
 ````
 
 - [ ] **Step 2: Commit**
