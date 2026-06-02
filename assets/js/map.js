@@ -3,6 +3,11 @@ export function esc(s) {
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
+/** Marker/legend colour for a group type. Sadhvi = ochre, everything else = maroon. */
+export function markerColor(groupType) {
+  return groupType === 'साध्वी' ? '#9A6324' : '#7B1E2B';
+}
+
 /** Returns only records that have lat/lng coordinates. */
 export function mappable(records) {
   return records.filter((r) => r.lat != null && r.lng != null);
@@ -39,7 +44,7 @@ export function buildMap(records, { L, elId = 'map' }) {
   const cluster = L.markerClusterGroup();
   const byId = new Map();
   for (const r of mappable(records)) {
-    const color = r.groupType === 'साध्वी' ? '#c0392b' : '#3E6AE1';
+    const color = markerColor(r.groupType);
     const marker = L.circleMarker([r.lat, r.lng], {
       radius: 7, color, fillColor: color, fillOpacity: 0.9, weight: 1,
     }).bindPopup(popupHtml(r));
