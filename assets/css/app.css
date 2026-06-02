@@ -4,8 +4,8 @@ header.topbar {
   border-bottom: 3px solid var(--gold);
 }
 header.topbar .brand-emblem {
-  width: 36px; height: 36px; border-radius: 50%;
-  background: #fff; padding: 3px; object-fit: contain; flex: 0 0 auto;
+  height: 32px; width: auto; max-width: 40px; border-radius: 4px;
+  background: #fff; padding: 2px; object-fit: contain; flex: 0 0 auto;
 }
 header.topbar .brand { font-weight: 500; letter-spacing: 1px; color: #fff; font-size: 17px; }
 header.topbar nav { margin-left: auto; display: flex; gap: 18px; }
