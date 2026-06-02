@@ -4,16 +4,16 @@ compatibility_date = "2024-09-23"
 compatibility_flags = ["nodejs_compat"]
 
 # KV namespaces (IDs filled during deploy — see docs/DEPLOY.md)
-# [[kv_namespaces]]
-# binding = "GEOCODE_CACHE"
-# id = "REPLACE_AFTER_CREATE"
+[[kv_namespaces]]
+binding = "GEOCODE_CACHE"
+id = "f6baf47e71554b9e8742dd323a7a8a31"
 
-# [[kv_namespaces]]
-# binding = "RATE_LIMIT"
-# id = "REPLACE_AFTER_CREATE"
+[[kv_namespaces]]
+binding = "RATE_LIMIT"
+id = "6a513be9a2f34790ac13204c6be51e70"
 
 [vars]
-GITHUB_REPO = "OWNER/REPO"   # set to your repo, e.g. abhishek/Sadhumargi_app
+GITHUB_REPO = "addictedabhi/Sadhumargi_app"   # set to your repo, e.g. abhishek/Sadhumargi_app
 GITHUB_BRANCH = "main"
 NOMINATIM_UA = "SadhumargiVihar/1.0 (contact: abhishek.jain@airlinq.com)"
 
