@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>विहार सूचना — सूची</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pdfmake@0.2.10/build/pdfmake.min.js"></script>
+  <script src="assets/js/noto-vfs.js" onerror="window.__notoMissing=true"></script>
+</head>
+<body>
+  <header class="topbar">
+    <span class="brand">विहार सूचना</span>
+    <nav>
+      <a href="index.html" class="active">सूची</a>
+      <a href="map.html">नक्शा</a>
+    </nav>
+  </header>
+  <div class="summary-bar" id="summary"></div>
+  <div class="controls">
+    <input type="search" id="q" placeholder="खोजें: नाम, शहर या जिला...">
+    <select id="zone"></select>
+    <button id="dl-excel">Excel डाउनलोड</button>
+    <button id="dl-pdf" class="secondary">PDF डाउनलोड</button>
+  </div>
+  <table class="data">
+    <thead><tr>
+      <th>क्र.स.</th><th>प्रकार</th><th>नाम</th><th>ठाणा</th><th>विहार मार्ग</th>
+      <th>स्थान</th><th>गाँव/शहर</th><th>जिला</th><th>किमी</th>
+      <th>विहारकर्मी</th><th>सक्रिय व्यक्ति</th>
+    </tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+
+  <script type="module">
+    import { loadData } from './assets/js/data.js';
+    import { filterRecords } from './assets/js/search.js';
+    import { renderRows, populateZones } from './assets/js/table.js';
+    import { downloadPdf } from './assets/js/download.js';
+
+    const elQ = document.getElementById('q');
+    const elZone = document.getElementById('zone');
+    const elRows = document.getElementById('rows');
+    const elSummary = document.getElementById('summary');
+
+    const { records, meta, error } = await loadData();
+    if (error) {
+      elSummary.textContent = 'डेटा लोड नहीं हुआ';
+    } else if (meta && meta.totals) {
+      const t = meta.totals;
+      elSummary.innerHTML =
+        `<span>कुल समूह: ${t.groups}</span><span>कुल साधु-साध्वी: ${t.members}</span>` +
+        `<span>नक्शे पर: ${t.mapped}</span>` +
+        `<span>अंतिम अपडेट: ${meta.uploadedAt || ''}</span>`;
+    }
+    populateZones(records, elZone);
+
+    function apply() {
+      let out = filterRecords(records, elQ.value);
+      if (elZone.value) out = out.filter((r) => r.zone === elZone.value);
+      renderRows(out, elRows);
+    }
+    elQ.addEventListener('input', apply);
+    elZone.addEventListener('change', apply);
+    document.getElementById('dl-excel').addEventListener('click', () => {
+      const a = document.createElement('a');
+      a.href = 'data/source.xlsx';
+      a.download = 'vihar-suchna.xlsx';
+      document.body.appendChild(a); a.click(); a.remove();
+    });
+    document.getElementById('dl-pdf').addEventListener('click', () => downloadPdf(records, meta));
+    apply();
+  </script>
+</body>
+</html>

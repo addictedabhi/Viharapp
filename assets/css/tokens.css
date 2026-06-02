@@ -1,0 +1,33 @@
+:root {
+  --blue: #3E6AE1;
+  --dark: #171A20;
+  --gray: #393C41;
+  --pewter: #5C5E62;
+  --silver: #8E8E8E;
+  --cloud: #EEEEEE;
+  --pale: #D0D1D2;
+  --ash: #F4F4F4;
+  --white: #FFFFFF;
+  --radius: 4px;
+  --transition: 0.33s cubic-bezier(0.5, 0, 0, 0.75);
+  --font: 'Noto Sans Devanagari', -apple-system, Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  font-family: var(--font);
+  color: var(--dark);
+  background: var(--white);
+  font-size: 14px;
+  line-height: 1.5;
+}
+a { color: var(--pewter); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { font-weight: 500; font-size: 22px; }
+button, .btn {
+  height: 40px; padding: 0 24px; border: 0; border-radius: var(--radius);
+  background: var(--blue); color: #fff; font: inherit; font-weight: 500;
+  cursor: pointer; transition: background-color var(--transition);
+}
+button.secondary, .btn.secondary { background: #fff; color: var(--gray); border: 1px solid var(--pale); }
+button:hover { background: #3358c4; }

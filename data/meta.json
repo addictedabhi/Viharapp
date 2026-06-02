@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "uploadedAt": "2026-06-01T20:40:48.839Z",
+  "fileName": "seed.xlsx",
+  "totals": {
+    "groups": 26,
+    "members": 99,
+    "sadhu": 53,
+    "sadhvi": 46,
+    "mapped": 26,
+    "geocodeFailed": 0
+  },
+  "geocodeFailures": []
+}

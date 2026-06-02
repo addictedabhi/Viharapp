@@ -1,0 +1,21 @@
+name = "sadhumargi-upload"
+main = "src/index.js"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+# KV namespaces (IDs filled during deploy — see docs/DEPLOY.md)
+# [[kv_namespaces]]
+# binding = "GEOCODE_CACHE"
+# id = "REPLACE_AFTER_CREATE"
+
+# [[kv_namespaces]]
+# binding = "RATE_LIMIT"
+# id = "REPLACE_AFTER_CREATE"
+
+[vars]
+GITHUB_REPO = "OWNER/REPO"   # set to your repo, e.g. abhishek/Sadhumargi_app
+GITHUB_BRANCH = "main"
+NOMINATIM_UA = "SadhumargiVihar/1.0 (contact: abhishek.jain@airlinq.com)"
+
+# Secrets (set via `wrangler secret put`): UPLOAD_USER, UPLOAD_PASS,
+# SESSION_SECRET, GITHUB_TOKEN

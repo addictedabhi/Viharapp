@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>विहार सूचना — नक्शा</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <span class="brand">विहार सूचना</span>
+    <nav>
+      <a href="index.html">सूची</a>
+      <a href="map.html" class="active">नक्शा</a>
+    </nav>
+  </header>
+  <div class="summary-bar" id="summary"></div>
+  <div class="controls">
+    <input type="search" id="q" placeholder="खोजें: नाम, शहर या जिला...">
+  </div>
+  <div class="legend">
+    <span><span class="dot sadhu"></span> साधु</span>
+    <span><span class="dot sadhvi"></span> साध्वी</span>
+  </div>
+  <div id="map"></div>
+  <div class="failed-panel" id="failed"></div>
+
+  <script type="module">
+    import { loadData } from './assets/js/data.js';
+    import { filterRecords } from './assets/js/search.js';
+    import { buildMap, filterMarkers, failedList, esc } from './assets/js/map.js';
+
+    const { records, meta, error } = await loadData();
+    const elSummary = document.getElementById('summary');
+    if (error) elSummary.textContent = 'डेटा लोड नहीं हुआ';
+    else if (meta && meta.totals) {
+      const t = meta.totals;
+      elSummary.innerHTML = `<span>नक्शे पर: ${t.mapped}</span><span>कुल समूह: ${t.groups}</span>`;
+    }
+
+    const state = buildMap(records, { L: window.L });
+
+    const failed = failedList(records);
+    document.getElementById('failed').innerHTML = failed.length
+      ? `<h2 style="font-size:16px;font-weight:500">नक्शे पर नहीं (${failed.length})</h2><ul>` +
+        failed.map((r) => `<li>${esc(r.zone)} — ${esc(r.place)}, ${esc(r.city)}, ${esc(r.district)}</li>`).join('') + '</ul>'
+      : '';
+
+    document.getElementById('q').addEventListener('input', (e) => {
+      const matched = filterRecords(records, e.target.value);
+      filterMarkers(state, matched);
+    });
+  </script>
+</body>
+</html>

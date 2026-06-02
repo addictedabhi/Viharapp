@@ -1,0 +1,214 @@
+{
+  "version": 1,
+  "_note": "Initial representative seed transcribed from 30.05.2026 vihar suchna.pdf. Covers legible groups across all zones so the table and map are populated. The complete dataset is intended to be published via the authenticated Excel upload flow (the canonical .xlsx). Add/replace records here or upload an .xlsx to refresh.",
+  "records": [
+    {
+      "zone": "02-बीकानेर-मारवाड़-अंचल", "zoneOrder": 2, "serial": 1, "groupType": "साधु",
+      "members": ["आचार्य प्रवर श्री रामलाल जी म.सा.", "उपाध्याय श्री राजेश मुनि जी म.सा.", "श्री मधुरमुनि जी म.सा.", "श्री गगन मुनि जी म.सा.", "श्री शोभन मुनि जी म.सा.", "श्री गुणीश मुनि जी म.सा.", "श्री रामचरण मुनि जी म.सा.", "श्री रामपुलक मुनि जी म.सा."],
+      "thana": 8, "viharRoute": "", "place": "सुराना भवन", "city": "नोखागाँव", "district": "बीकानेर, राज.", "km": null,
+      "viharKarmi": [{ "name": "गुमान जी", "phone": "9482140921" }],
+      "activePersons": [{ "name": "गंगाराम जी लुणावत", "phone": "8290821152" }, { "name": "पंकज जी सुराना", "phone": "9413105130" }, { "name": "महेश जी नाहटा", "phone": "9406201351" }],
+      "lat": null, "lng": null, "geocodeStatus": "failed"
+    },
+    {
+      "zone": "02-बीकानेर-मारवाड़-अंचल", "zoneOrder": 2, "serial": 3, "groupType": "साधु",
+      "members": ["श्री हेमगिरी जी म.सा.", "श्री नीरज मुनि जी म.सा.", "श्री राकेश मुनि जी म.सा.", "श्री राजन मुनि जी म.सा.", "श्री रामलक्ष्य मुनि जी म.सा.", "श्री रामसेतु मुनि जी म.सा.", "श्री रामपूर्ण मुनि जी म.सा."],
+      "thana": 7, "viharRoute": "", "place": "जैन जवाहर साधना भवन", "city": "भीनासर", "district": "बीकानेर, राज.", "km": null,
+      "viharKarmi": [],
+      "activePersons": [{ "name": "दीपक जी सेठिया", "phone": "7737976062" }, { "name": "सुरेन्द्र जी सेठिया", "phone": "8302383399" }, { "name": "मनोज जी डांगा", "phone": "9414012015" }],
+      "lat": null, "lng": null, "geocodeStatus": "failed"
+    },
+    {
+      "zone": "02-बीकानेर-मारवाड़-अंचल", "zoneOrder": 2, "serial": 4, "groupType": "साधु",
+      "members": ["शासन दीपक श्री रोहित मुनि जी म.सा.", "श्री रामसुवर्ण मुनि जी म.सा."],
+      "thana": 2, "viharRoute": "", "place": "राठा उपाश्रय", "city": "पीपाड़", "district": "जोधपुर, राज.", "km": null,
+      "viharKarmi": [],
+      "activePersons": [{ "name": "गौतम जी मुथा", "phone": "9929772711" }],
+      "lat": null, "lng": null, "geocodeStatus": "failed"
+    },
+    {
+      "zone": "02-बीकानेर-मारवाड़-अंचल", "zoneOrder": 2, "serial": 5, "groupType": "साधु",
+      "members": ["शासन दीपक श्री संजय मुनि जी म.सा.", "श्री रामनंदन मुनि जी म.सा."],
+      "thana": 2, "viharRoute": "देशनोक से रासीसर", "place": "ललवाणी जी का निवास", "city": "रासीसर", "district": "बीकानेर, राज.", "km": 6,
+      "viharKarmi": [],
+      "activePersons": [{ "name": "इंदरसिंह जी भुरा", "phone": "9680499150" }],
+      "lat": null, "lng": null, "geocodeStatus": "failed"
+    },
+    {
+      "zone": "02-बीकानेर-मारवाड़-अंचल", "zoneOrder": 2, "serial": 6, "groupType": "साधु",
+      "members": ["शासन दीपक श्री हर्षित मुनि जी म.सा.", "श्री धीरज मुनि जी म.सा.", "श्री रामानुज मुनि जी म.सा.", "श्री रामानंद मुनि जी म.सा."],
+      "thana": 4, "viharRoute": "अलाय से करणीवुड फैक्ट्री, नोखा रोड़", "place": "करणीवुड फैक्ट्री", "city": "नोखा", "district": "नागौर, राज.", "km": 17.5,
+      "viharKarmi": [],
+      "activePersons": [{ "name": "भीवराज जी कांकरिया", "phone": "9413311809" }, { "name": "जितेन्द्र जी गोच्छा", "phone": "9001013638" }],
+      "lat": null, "lng": null, "geocodeStatus": "failed"
+    },
+    {
+      "zone": "02-बीकानेर-मारवाड़-अंचल", "zoneOrder": 2, "serial": 9, "groupType": "साधु",
+      "members": ["शासन दीपक श्री आदर्श मुनि जी म.सा.", "श्री निश्रेयस मुनि जी म.सा.", "श्री नवोन्मेष मुनि जी म.सा.", "श्री रामवीर मुनि जी म.सा.", "श्री राममूर्ति मुनि जी म.सा."],
+      "thana": 5, "viharRoute": "", "place": "श्री महावीर भवन", "city": "रामा", "district": "बठिंडा, पंजाब", "km": null,
+      "viharKarmi": [],
+      "activePersons": [{ "name": "संजय जी जैन", "phone": "9815739711" }, { "name": "पूनमचंद जी सुराणा", "phone": "9351092281" }],
+      "lat": null, "lng": null, "geocodeStatus": "failed"
+    },
+    {
+      "zone": "01-मेवाड़-अंचल", "zoneOrder": 1, "serial": 1, "groupType": "साधु",
+      "members": ["शासन दीपक श्री छत्रांक मुनि जी म.सा.", "श्री रामयश मुनि जी म.सा.", "श्री रामदर्श मुनि जी म.सा."],
+      "thana": 3, "viharRoute": "निम्बाहेड़ा से जलिया", "place": "अटल सेवा केंद्र", "city": "जलिया", "district": "चित्तौड़गढ़, राज.", "km": 7,
+      "viharKarmi": [],
+      "activePersons": [{ "name": "रतनलाल जी पोरवाल", "phone": "9461273789" }, { "name": "सुशील जी नागोरी", "phone": "9799999595" }],
+      "lat": null, "lng": null, "geocodeStatus": "failed"
+    },
+    {
+      "zone": "01-मेवाड़-अंचल", "zoneOrder": 1, "serial": 3, "groupType": "साध्वी",
+      "members": ["शासन दीपिका साध्वी श्री सुशीलाकंवर जी म.सा.(उदयपुर वाले)", "साध्वी श्री कमल श्री जी म.सा.", "साध्वी श्री सिद्धमणि जी म.सा.", "साध्वी श्री अर्पिता श्री जी म.सा.", "साध्वी श्री मृगांक श्री जी म.सा."],
+      "thana": 5, "viharRoute": "", "place": "निर्मल जी भंडारी का निवास", "city": "सुभाष नगर, उदयपुर", "district": "उदयपुर, राज.", "km": null,
+      "viharKarmi": [],
+      "activePersons": [{ "name": "सागर जी गोलछा", "phone": "9829401815" }, { "name": "आशीष जी सहलोत", "phone": "8854013333" }],
+      "lat": null, "lng": null, "geocodeStatus": "failed"
+    },
+    {
+      "zone": "01-मेवाड़-अंचल", "zoneOrder": 1, "serial": 4, "groupType": "साध्वी",
+      "members": ["शासन दीपिका साध्वी श्री पुष्पलता जी म.सा.", "साध्वी श्री जिनप्रभा जी म.सा.", "साध्वी श्री सुनिधि श्री जी म.सा.", "साध्वी श्री रामार्चना जी म.सा."],
+      "thana": 4, "viharRoute": "", "place": "जैन स्थानक", "city": "सुभाष नगर, भीलवाड़ा", "district": "भीलवाड़ा, राज.", "km": null,
+      "viharKarmi": [],
+      "activePersons": [{ "name": "अशोक जी लसोड़", "phone": "9414302634" }, { "name": "दीपक जी बेताला", "phone": "9462595676" }],
+      "lat": null, "lng": null, "geocodeStatus": "failed"
+    },
+    {
+      "zone": "01-मेवाड़-अंचल", "zoneOrder": 1, "serial": 6, "groupType": "साध्वी",
+      "members": ["शासन दीपिका साध्वी श्री चेतन श्री जी म.सा.", "साध्वी श्री चंचलकंवर जी म.सा.", "साध्वी श्री सूर्यमणि जी म.सा.", "साध्वी श्री सुषमा श्री जी म.सा."],
+      "thana": 8, "viharRoute": "", "place": "समता भवन", "city": "आदर्श कॉलोनी, निम्बाहेड़ा", "district": "चित्तौड़गढ़, राज.", "km": null,
+      "viharKarmi": [],
+      "activePersons": [{ "name": "रतनलाल जी पोरवाल", "phone": "9461273789" }, { "name": "सुशील जी नागोरी", "phone": "9799999595" }],
+      "lat": null, "lng": null, "geocodeStatus": "failed"
+    },
+    {
+      "zone": "03-जयपुर-ब्यावर-अंचल", "zoneOrder": 3, "serial": 1, "groupType": "साधु",
+      "members": ["शासन दीपक श्री विनयमुनि जी म.सा.", "श्री रामविज्ञ मुनि जी म.सा."],
+      "thana": 2, "viharRoute": "हाउसिंग बोर्ड ब्यावर से विनोद नगर", "place": "नाबेडा का निवास", "city": "विनोद नगर, ब्यावर", "district": "ब्यावर, राज.", "km": 1,
+      "viharKarmi": [],
+      "activePersons": [{ "name": "गौतम चंद जी चौधरी", "phone": "9414669283" }, { "name": "धर्मी चंद जी ओस्तवाल", "phone": "9829346884" }],
+      "lat": null, "lng": null, "geocodeStatus": "failed"
+    },
+    {
+      "zone": "03-जयपुर-ब्यावर-अंचल", "zoneOrder": 3, "serial": 5, "groupType": "साध्वी",
+      "members": ["शासन दीपिका साध्वी श्री पावन श्री जी म.सा.", "साध्वी श्री प्रशांत श्री जी म.सा.", "साध्वी श्री प्रबोध श्री जी म.सा.", "साध्वी श्री प्रणव श्री जी म.सा."],
+      "thana": 4, "viharRoute": "", "place": "समता भवन", "city": "कुंडेरा", "district": "सवाईमाधोपुर, राज.", "km": null,
+      "viharKarmi": [],
+      "activePersons": [{ "name": "दिनेशचंद जी जैन", "phone": "9414522929" }],
+      "lat": null, "lng": null, "geocodeStatus": "failed"
+    },
+    {
+      "zone": "03-जयपुर-ब्यावर-अंचल", "zoneOrder": 3, "serial": 7, "groupType": "साध्वी",
+      "members": ["शासन दीपिका साध्वी श्री लोकोत्तर श्री जी म.सा.", "साध्वी श्री रामायुषी श्री जी म.सा.", "साध्वी श्री रामयुक्ता श्री जी म.सा.", "साध्वी श्री रामनिभा श्री जी म.सा."],
+      "thana": 4, "viharRoute": "", "place": "सामायिक स्वाध्याय भवन", "city": "निरंजन नगर, जयपुर", "district": "जयपुर, राज.", "km": null,
+      "viharKarmi": [],
+      "activePersons": [{ "name": "रामप्रसाद जी चौधरी", "phone": "6264736926" }, { "name": "मुकेश जी जारोली", "phone": "9351149600" }],
+      "lat": null, "lng": null, "geocodeStatus": "failed"
+    },
+    {
+      "zone": "04-मध्य-प्रदेश-अंचल", "zoneOrder": 4, "serial": 1, "groupType": "साधु",
+      "members": ["शासन दीपक श्री निश्चल मुनि जी म.सा.", "श्री चिन्मय मुनि जी म.सा.", "श्री हिमांशु मुनि जी म.सा.", "श्री ब्रह्मऋषि मुनि जी म.सा."],
+      "thana": 4, "viharRoute": "", "place": "पगारिया हाउस", "city": "स्टेशन रोड, रतलाम", "district": "रतलाम, म.प्र.", "km": null,
+      "viharKarmi": [],
+      "activePersons": [{ "name": "विनोद जी मेहता", "phone": "9425195085" }, { "name": "पंकज जी मूणत", "phone": "9425927068" }],
+      "lat": null, "lng": null, "geocodeStatus": "failed"
+    },
+    {
+      "zone": "04-मध्य-प्रदेश-अंचल", "zoneOrder": 4, "serial": 2, "groupType": "साधु",
+      "members": ["शासन दीपक श्री आदित्य मुनि जी म.सा.", "श्री अटल मुनि जी म.सा."],
+      "thana": 2, "viharRoute": "", "place": "श्री सुधर्मा जैन स्थानक", "city": "ग्रीन पार्क कॉलोनी, इंदौर", "district": "इंदौर, म.प्र.", "km": null,
+      "viharKarmi": [],
+      "activePersons": [{ "name": "पारस जी बोहरा", "phone": "9826036242" }, { "name": "पिंकेश जी पगारिया", "phone": "9827237901" }],
+      "lat": null, "lng": null, "geocodeStatus": "failed"
+    },
+    {
+      "zone": "04-मध्य-प्रदेश-अंचल", "zoneOrder": 4, "serial": 3, "groupType": "साधु",
+      "members": ["शासन दीपक श्री हेमंत मुनि जी म.सा.", "श्री रामहृदय मुनि जी म.सा."],
+      "thana": 2, "viharRoute": "", "place": "महावीर भवन", "city": "नमक मंडी, उज्जैन", "district": "उज्जैन, म.प्र.", "km": null,
+      "viharKarmi": [],
+      "activePersons": [{ "name": "संजय जी पावेचा", "phone": "9826374201" }],
+      "lat": null, "lng": null, "geocodeStatus": "failed"
+    },
+    {
+      "zone": "05-छत्तीसगढ़-उड़ीसा-अंचल", "zoneOrder": 5, "serial": 1, "groupType": "साधु",
+      "members": ["शासन दीपक श्री अक्षय मुनि जी म.सा.", "श्री मनीष मुनि जी म.सा.", "श्री प्रणत मुनि जी म.सा.", "श्री दिनेश मुनि जी म.सा."],
+      "thana": 4, "viharRoute": "", "place": "समता भवन", "city": "राजनांदगांव", "district": "राजनांदगांव, छ.ग.", "km": null,
+      "viharKarmi": [],
+      "activePersons": [{ "name": "विकास जी सोलंकी", "phone": "9685583623" }, { "name": "निलेश जी टाटिया", "phone": "9098131000" }],
+      "lat": null, "lng": null, "geocodeStatus": "failed"
+    },
+    {
+      "zone": "05-छत्तीसगढ़-उड़ीसा-अंचल", "zoneOrder": 5, "serial": 2, "groupType": "साध्वी",
+      "members": ["शासन दीपिका साध्वी श्री हेमप्रभा जी म.सा.", "साध्वी श्री सुप्रज्ञा जी म.सा.", "साध्वी श्री जयप्रज्ञा श्री जी म.सा.", "साध्वी श्री निरामय श्री जी म.सा."],
+      "thana": 11, "viharRoute": "", "place": "समता भवन", "city": "शिवपारा, दुर्ग", "district": "दुर्ग, छ.ग.", "km": null,
+      "viharKarmi": [],
+      "activePersons": [{ "name": "जलेश्वर जी (राजू)", "phone": "7023690988" }, { "name": "नवीन जी बोथरा", "phone": "9827174330" }],
+      "lat": null, "lng": null, "geocodeStatus": "failed"
+    },
+    {
+      "zone": "06-कर्नाटक-आंध्रप्रदेश-अंचल", "zoneOrder": 6, "serial": 1, "groupType": "साधु",
+      "members": ["शासन दीपक श्री विदेह मुनि जी म.सा.", "श्री उत्तमयश मुनि जी म.सा."],
+      "thana": 2, "viharRoute": "अग्रीपेट बेंगलुरु से राजाजी नगर", "place": "जैन स्थानक भवन", "city": "राजाजी नगर, बेंगलुरु", "district": "बेंगलुरु, कर्नाटक", "km": 5,
+      "viharKarmi": [],
+      "activePersons": [{ "name": "किशोर जी कर्नावट", "phone": "9845038597" }, { "name": "कोमल कुमार जी गांधी", "phone": "9448487363" }],
+      "lat": null, "lng": null, "geocodeStatus": "failed"
+    },
+    {
+      "zone": "07-तमिलनाडु-अंचल", "zoneOrder": 7, "serial": 1, "groupType": "साध्वी",
+      "members": ["शासन दीपिका साध्वी श्री दिव्यदेशना श्री जी म.सा.", "साध्वी श्री नवकार श्री जी म.सा.", "साध्वी श्री शुभंकरा श्री जी म.सा."],
+      "thana": 3, "viharRoute": "", "place": "समता भवन", "city": "कोडंबाक्कम, चेन्नई", "district": "चेन्नई, तमिलनाडु", "km": null,
+      "viharKarmi": [],
+      "activePersons": [{ "name": "प्रहलाद जी मेनारिया", "phone": "9462989789" }, { "name": "मांगीलाल जी छल्लाणी", "phone": "9841326166" }],
+      "lat": null, "lng": null, "geocodeStatus": "failed"
+    },
+    {
+      "zone": "08-मुंबई-गुजरात-अंचल", "zoneOrder": 8, "serial": 1, "groupType": "साधु",
+      "members": ["शासन दीपक श्री मदन मुनि जी म.सा.", "श्री सुबाहु मुनि जी म.सा.", "श्री भुतिप्रज्ञ मुनि जी म.सा."],
+      "thana": 3, "viharRoute": "", "place": "ऋतु अपार्टमेंट ग्राउंड फ्लोर", "city": "विले पार्ले वेस्ट, मुंबई", "district": "मुंबई, महा.", "km": null,
+      "viharKarmi": [],
+      "activePersons": [{ "name": "संतोष जी पितलिया", "phone": "9892669669" }, { "name": "पिंटू जी मच्छा", "phone": "9833688890" }],
+      "lat": null, "lng": null, "geocodeStatus": "failed"
+    },
+    {
+      "zone": "08-मुंबई-गुजरात-अंचल", "zoneOrder": 8, "serial": 6, "groupType": "साध्वी",
+      "members": ["शासन दीपिका साध्वी श्री रामध्वनि जी म.सा.", "साध्वी श्री रामनिधि श्री जी म.सा.", "साध्वी श्री रामनेमि श्री जी म.सा.", "साध्वी श्री रामस्मृति श्री जी म.सा."],
+      "thana": 4, "viharRoute": "", "place": "जैन उपाश्रय, जय प्रेम सोसायटी", "city": "शाहीबाग, अहमदाबाद", "district": "अहमदाबाद, गुजरात", "km": null,
+      "viharKarmi": [],
+      "activePersons": [{ "name": "मोहन जी बोथरा", "phone": "9825581229" }, { "name": "महेन्द्र जी चोपड़ा", "phone": "9327002670" }],
+      "lat": null, "lng": null, "geocodeStatus": "failed"
+    },
+    {
+      "zone": "09-महाराष्ट्र-खानदेश-विदर्भ-अंचल", "zoneOrder": 9, "serial": 5, "groupType": "साध्वी",
+      "members": ["शासन दीपिका साध्वी श्री आदर्शप्रभा जी म.सा.", "साध्वी श्री ऋजुता श्री जी म.सा.", "साध्वी श्री मुस्कान श्री जी म.सा.", "साध्वी श्री ऋतु श्री जी म.सा.", "साध्वी श्री गुंजन श्री जी म.सा.", "साध्वी श्री प्रत्युषा श्री जी म.सा."],
+      "thana": 6, "viharRoute": "", "place": "महावीर भवन", "city": "इतवारी, नागपुर", "district": "नागपुर, महा.", "km": null,
+      "viharKarmi": [],
+      "activePersons": [{ "name": "कैलाश जी परिहार", "phone": "9669179121" }, { "name": "राजेन्द्र जी बेद", "phone": "9960695111" }],
+      "lat": null, "lng": null, "geocodeStatus": "failed"
+    },
+    {
+      "zone": "10-बंगाल-बिहार-नेपाल-भूटान-अंचल", "zoneOrder": 10, "serial": 1, "groupType": "साध्वी",
+      "members": ["शासन दीपिका साध्वी श्री सुरीली श्री जी म.सा.", "साध्वी श्री चिरंतन श्री जी म.सा.", "साध्वी श्री मृदुलप्रज्ञा श्री जी म.सा.", "साध्वी श्री रोहिता श्री जी म.सा."],
+      "thana": 4, "viharRoute": "", "place": "शिखर चंद जी डागा का निवास", "city": "इस्लामपुर", "district": "उत्तर दिनाजपुर, पश्चिम बंगाल", "km": null,
+      "viharKarmi": [],
+      "activePersons": [{ "name": "मनोज जी यादव", "phone": "6206257748" }, { "name": "शिखर चंद जी डागा", "phone": "9332048054" }],
+      "lat": null, "lng": null, "geocodeStatus": "failed"
+    },
+    {
+      "zone": "12-दिल्ली-पंजाब-हरियाणा-उत्तरी-अंचल", "zoneOrder": 12, "serial": 1, "groupType": "साधु",
+      "members": ["शासन दीपक श्री मयंक मुनि जी म.सा.", "श्री नमन मुनि जी म.सा.", "श्री रामरवि मुनि जी म.सा."],
+      "thana": 3, "viharRoute": "", "place": "महावीर भवन", "city": "सेक्टर 15, फरीदाबाद", "district": "फरीदाबाद, हरियाणा", "km": null,
+      "viharKarmi": [],
+      "activePersons": [{ "name": "भगवान सिंह", "phone": "8171497583" }, { "name": "रमेश जी गोलछा", "phone": "9810074206" }],
+      "lat": null, "lng": null, "geocodeStatus": "failed"
+    },
+    {
+      "zone": "12-दिल्ली-पंजाब-हरियाणा-उत्तरी-अंचल", "zoneOrder": 12, "serial": 3, "groupType": "साध्वी",
+      "members": ["शासन दीपिका साध्वी श्री चंद्रिका श्री जी म.सा.", "साध्वी श्री विमुक्ति श्री जी म.सा.", "साध्वी श्री रामकृति श्री जी म.सा.", "साध्वी श्री रामजीता श्री जी म.सा."],
+      "thana": 4, "viharRoute": "", "place": "जैन स्थानक", "city": "अमीनगर सराय", "district": "बागपत, उ.प्र.", "km": null,
+      "viharKarmi": [],
+      "activePersons": [{ "name": "नरेन्द्र जी मिश्रा", "phone": "8750239748" }, { "name": "मुकेश जी जैन", "phone": "9897743658" }],
+      "lat": null, "lng": null, "geocodeStatus": "failed"
+    }
+  ]
+}
