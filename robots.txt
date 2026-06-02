@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://addictedabhi.github.io/Sadhumargi_app/sitemap.xml
