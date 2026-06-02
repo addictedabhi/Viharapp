@@ -8,7 +8,7 @@ describe('worker html pages', () => {
     expect(html).toContain('action="/login"');
     expect(html).toContain('method="post"');
     expect(html).toContain('लॉगिन');
-    expect(html).toContain('#3E6AE1'); // Tesla electric blue
+    expect(html).toContain('#7B1E2B'); // maroon identity accent
   });
 
   it('login page can show an error message', () => {
