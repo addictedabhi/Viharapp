@@ -7,21 +7,22 @@ function escHtml(s) {
 }
 
 const STYLE = `
-:root{--blue:#3E6AE1;--dark:#171A20;--gray:#393C41;--ash:#F4F4F4}
+:root{--maroon:#7B1E2B;--maroon-dark:#5E121D;--gold:#C99700;--dark:#171A20;--gray:#393C41;--cream:#FBF5E9}
 *{box-sizing:border-box}
 body{margin:0;font-family:'Noto Sans Devanagari',-apple-system,Arial,sans-serif;
   color:var(--dark);background:#fff;display:flex;min-height:100vh;align-items:center;
   justify-content:center}
-.card{width:340px;padding:32px}
-h1{font-weight:500;font-size:22px;margin:0 0 24px}
+.card{width:340px;padding:32px;border-top:3px solid var(--gold)}
+h1{font-weight:500;font-size:22px;margin:0 0 24px;color:var(--maroon)}
 label{display:block;font-size:14px;color:var(--gray);margin:16px 0 4px}
 input{width:100%;height:40px;border:1px solid #D0D1D2;border-radius:4px;padding:0 12px;
   font:inherit}
-button{width:100%;height:40px;margin-top:24px;background:var(--blue);color:#fff;border:0;
+button{width:100%;height:40px;margin-top:24px;background:var(--maroon);color:#fff;border:0;
   border-radius:4px;font:inherit;font-weight:500;cursor:pointer;
   transition:background-color .33s}
+button:hover{background:var(--maroon-dark)}
 .err{color:#c0392b;font-size:14px;margin-top:12px}
-.summary{max-width:560px;padding:32px}
+.summary{max-width:560px;padding:32px;border-top:3px solid var(--gold)}
 table{border-collapse:collapse;width:100%;margin-top:16px}
 td,th{border-bottom:1px solid #EEE;padding:8px;text-align:right;font-size:14px}
 `;
@@ -72,8 +73,8 @@ export function uploadForm(error) {
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500&display=swap" rel="stylesheet">
 <style>body{font-family:'Noto Sans Devanagari',Arial,sans-serif;color:#171A20;
 display:flex;min-height:100vh;align-items:center;justify-content:center}
-.card{width:360px;padding:32px}h1{font-weight:500}
-input[type=file]{margin:16px 0}button{height:40px;background:#3E6AE1;color:#fff;border:0;
+.card{width:360px;padding:32px;border-top:3px solid #C99700}h1{font-weight:500;color:#7B1E2B}
+input[type=file]{margin:16px 0}button{height:40px;background:#7B1E2B;color:#fff;border:0;
 border-radius:4px;padding:0 24px;font:inherit;font-weight:500;cursor:pointer}
 .err{color:#c0392b}</style></head><body><div class="card">
 <h1>एक्सेल अपलोड करें</h1>

@@ -3,7 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>विहार सूचना — नक्शा</title>
+  <title>नक्शा — विहार सूचना | जैन साधु-साध्वी स्थान</title>
+  <meta name="description" content="जैन साधु-साध्वी भगवंतों के विहार स्थानों का नक्शा। OpenStreetMap पर अंचलवार स्थान एवं खोज।">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#7B1E2B">
+  <link rel="canonical" href="https://addictedabhi.github.io/Sadhumargi_app/map.html">
+  <link rel="icon" href="assets/logo.jpg">
+  <link rel="apple-touch-icon" href="assets/logo.jpg">
+  <meta property="og:site_name" content="विहार सूचना">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="hi_IN">
+  <meta property="og:title" content="नक्शा — विहार सूचना">
+  <meta property="og:description" content="जैन साधु-साध्वी भगवंतों के विहार स्थानों का नक्शा।">
+  <meta property="og:url" content="https://addictedabhi.github.io/Sadhumargi_app/map.html">
+  <meta property="og:image" content="https://addictedabhi.github.io/Sadhumargi_app/assets/logo.jpg">
+  <meta name="twitter:card" content="summary">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
@@ -15,10 +29,12 @@
 </head>
 <body>
   <header class="topbar">
+    <img class="brand-emblem" src="assets/logo.jpg" alt="जैन प्रतीक चिन्ह" onerror="this.style.display='none'">
     <span class="brand">विहार सूचना</span>
     <nav>
       <a href="index.html">सूची</a>
       <a href="map.html" class="active">नक्शा</a>
+      <a href="contact.html">संपर्क</a>
     </nav>
   </header>
   <div class="summary-bar" id="summary"></div>
@@ -31,6 +47,11 @@
   </div>
   <div id="map"></div>
   <div class="failed-panel" id="failed"></div>
+  <footer class="sitefoot">
+    <span class="foot-left">© Jain Sangh 2026</span>
+    <span class="foot-center"><a href="https://jainabhishek.com/" target="_blank" rel="noopener noreferrer">jainabhishek.com</a></span>
+    <span class="foot-right"><a href="contact.html">संपर्क</a></span>
+  </footer>
 
   <script type="module">
     import { loadData } from './assets/js/data.js';

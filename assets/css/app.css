@@ -1,12 +1,20 @@
 header.topbar {
-  display: flex; align-items: center; gap: 24px;
-  padding: 12px 24px; border-bottom: 1px solid var(--cloud);
+  display: flex; align-items: center; gap: 16px;
+  padding: 10px 24px; background: var(--maroon);
+  border-bottom: 3px solid var(--gold);
 }
-header.topbar .brand { font-weight: 500; letter-spacing: 1px; }
-header.topbar nav a { margin-right: 16px; color: var(--dark); }
-header.topbar nav a.active { color: var(--blue); }
+header.topbar .brand-emblem {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: #fff; padding: 3px; object-fit: contain; flex: 0 0 auto;
+}
+header.topbar .brand { font-weight: 500; letter-spacing: 1px; color: #fff; font-size: 17px; }
+header.topbar nav { margin-left: auto; display: flex; gap: 18px; }
+header.topbar nav a { color: var(--cream-band); }
+header.topbar nav a:hover { color: #fff; text-decoration: none; }
+header.topbar nav a.active { color: #fff; border-bottom: 2px solid var(--gold); padding-bottom: 2px; }
+
 .summary-bar {
-  padding: 8px 24px; background: var(--ash); color: var(--gray);
+  padding: 8px 24px; background: var(--cream); color: var(--gray);
   display: flex; flex-wrap: wrap; gap: 16px; font-size: 13px;
 }
 .controls { display: flex; gap: 12px; padding: 16px 24px; flex-wrap: wrap; }
@@ -21,17 +29,40 @@ table.data th, table.data td {
   text-align: right; vertical-align: top; font-size: 13px;
 }
 table.data th { color: var(--gray); font-weight: 500; position: sticky; top: 0; background: #fff; }
-table.data tr.zone-head td { background: var(--ash); font-weight: 500; text-align: right; }
+table.data tr.zone-head td {
+  background: var(--cream-band); font-weight: 500; text-align: right;
+  color: var(--maroon); border-bottom: 1px solid var(--gold);
+}
 .member-head { font-weight: 500; }
 .empty { padding: 48px 24px; color: var(--silver); text-align: center; }
-#map { height: calc(100vh - 160px); width: 100%; }
+#map { height: calc(100vh - 220px); width: 100%; }
 .legend { display: flex; gap: 16px; padding: 8px 24px; font-size: 13px; }
 .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-left: 4px; }
-.dot.sadhu { background: var(--blue); }
-.dot.sadhvi { background: #c0392b; }
+.dot.sadhu { background: var(--maroon); }
+.dot.sadhvi { background: var(--ochre); }
 .failed-panel { padding: 16px 24px; }
 .failed-panel ul { color: var(--gray); }
+
+footer.sitefoot {
+  display: flex; align-items: center; gap: 12px;
+  padding: 14px 24px; margin-top: 24px;
+  background: var(--maroon); color: var(--cream-band);
+  border-top: 3px solid var(--gold); font-size: 13px;
+}
+footer.sitefoot .foot-left { flex: 1 1 0; text-align: left; }
+footer.sitefoot .foot-center { flex: 1 1 0; text-align: center; }
+footer.sitefoot .foot-right { flex: 1 1 0; text-align: right; }
+footer.sitefoot a { color: #fff; }
+footer.sitefoot a:hover { color: var(--gold-soft); }
+
+.contact-blank { padding: 64px 24px; text-align: center; color: var(--gray); }
+.contact-blank h1 { color: var(--maroon); }
+
 @media (max-width: 768px) {
   .controls input[type="search"] { min-width: 100%; }
   table.data th, table.data td { padding: 8px 6px; font-size: 12px; }
+  footer.sitefoot { flex-direction: column; gap: 6px; }
+  footer.sitefoot .foot-left,
+  footer.sitefoot .foot-center,
+  footer.sitefoot .foot-right { text-align: center; }
 }
