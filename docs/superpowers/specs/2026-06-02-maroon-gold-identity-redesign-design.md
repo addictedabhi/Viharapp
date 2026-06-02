@@ -147,15 +147,53 @@ fabricated entities.
 
 ### Site-level files (repo root)
 - `robots.txt` — allow all crawlers + a `Sitemap:` line pointing to the absolute sitemap URL.
-- `sitemap.xml` — two URLs: `index.html` (priority 1.0) and `map.html` (priority 0.8),
-  each with `<lastmod>`.
+- `sitemap.xml` — three URLs: `index.html` (priority 1.0), `map.html` (priority 0.8),
+  and `contact.html` (priority 0.5), each with `<lastmod>`.
+
+## 8a. Navigation, Footer, and Contact page
+
+### Navigation (all public pages)
+The header nav gains a third link. Final order: `सूची` (index.html), `नक्शा`
+(map.html), `संपर्क` (contact.html). Labels stay Hindi for consistency with the
+existing nav; the active link gets the gold underline (§4). The same nav markup appears
+on `index.html`, `map.html`, and `contact.html`, with the current page marked `active`.
+
+### Footer (all public pages)
+A new `<footer class="sitefoot">` added to `index.html`, `map.html`, and `contact.html`
+(not the Worker pages). Three-slot flex layout:
+
+- **Left:** `© Jain Sangh 2026` (copyright).
+- **Centre:** link to `https://jainabhishek.com/` — opens in a new tab,
+  `target="_blank" rel="noopener noreferrer"`. It is an external site, so the link is
+  intentionally outbound (does not affect canonical/sitemap).
+- **Right:** `संपर्क` — links to `contact.html`.
+
+Styling: maroon or cream band consistent with the header treatment, gold top hairline,
+`--pewter`/white text, small font (~13px), responsive (slots stack centred on mobile,
+`max-width: 768px`). Exact band colour finalised against the header during
+implementation so footer and header read as a pair.
+
+> **Open item flagged by owner ambiguity:** the request placed both "contact us" and the
+> copyright "on the right". Resolved here as **left = copyright, centre = website,
+> right = संपर्क**, since the centre slot is the website link. Adjust if the owner
+> intended otherwise.
+
+### Contact page (`contact.html`)
+A new page, **intentionally blank of content for now** (owner's instruction). It is not
+an empty file — it reuses the full themed shell so it doesn't look broken:
+- Same `<head>` block: favicon, theme-color, canonical (`.../contact.html`), OG/Twitter,
+  title `संपर्क करें — विहार सूचना`, and a short Hindi meta description.
+- Same themed header (with `संपर्क` active) and the same footer.
+- Body: a single placeholder heading `संपर्क करें` and a one-line note such as
+  `यह पृष्ठ शीघ्र उपलब्ध होगा।` ("this page will be available soon"). No form, no data.
+- Added to `sitemap.xml` (priority 0.5) and covered by `robots.txt` allow.
 
 ## 9. Files touched
 
 **Modify:** `assets/css/tokens.css`, `assets/css/app.css`, `index.html`, `map.html`,
 `assets/js/map.js`, `worker/src/pages.js`, `worker/test/pages.test.js`.
-**Create:** `favicon.ico`, `favicon-32.png`, `apple-touch-icon.png`, `robots.txt`,
-`sitemap.xml` (all at repo root).
+**Create:** `contact.html`, `favicon.ico`, `favicon-32.png`, `apple-touch-icon.png`,
+`robots.txt`, `sitemap.xml` (all at repo root).
 **Already present:** `assets/logo.jpg`.
 
 **Untouched (the spine):** `shared/records.js`, `worker/src/parse.js`,
@@ -172,9 +210,11 @@ fabricated entities.
   marker colours are inline constants only (not unit-tested), no test change needed.
 - `npm test` must stay green. No new test framework or fixtures required — this is a
   presentational change over untouched logic.
-- Manual check: load `index.html` and `map.html`, confirm emblem renders in the chip,
-  favicon shows in the tab, and removing/renaming `logo.jpg` falls back to the text
-  wordmark without breaking layout.
+- Manual check: load `index.html`, `map.html`, and `contact.html`; confirm emblem
+  renders in the chip, favicon shows in the tab, the third nav link (`संपर्क`) works and
+  marks active correctly, the footer's three slots render and stack on mobile, the
+  `jainabhishek.com` link opens in a new tab, and removing/renaming `logo.jpg` falls back
+  to the text wordmark without breaking layout.
 
 ## 11. Risks & mitigations
 
