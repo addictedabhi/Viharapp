@@ -1,5 +1,11 @@
 :root {
-  --blue: #3E6AE1;
+  --maroon: #7B1E2B;
+  --maroon-dark: #5E121D;
+  --gold: #C99700;
+  --gold-soft: #E0B84C;
+  --cream: #FBF5E9;
+  --cream-band: #F4E7CE;
+  --ochre: #9A6324;
   --dark: #171A20;
   --gray: #393C41;
   --pewter: #5C5E62;
@@ -22,12 +28,12 @@ body {
   line-height: 1.5;
 }
 a { color: var(--pewter); text-decoration: none; }
-a:hover { text-decoration: underline; }
+a:hover { color: var(--maroon); text-decoration: underline; }
 h1 { font-weight: 500; font-size: 22px; }
 button, .btn {
   height: 40px; padding: 0 24px; border: 0; border-radius: var(--radius);
-  background: var(--blue); color: #fff; font: inherit; font-weight: 500;
+  background: var(--maroon); color: #fff; font: inherit; font-weight: 500;
   cursor: pointer; transition: background-color var(--transition);
 }
-button.secondary, .btn.secondary { background: #fff; color: var(--gray); border: 1px solid var(--pale); }
-button:hover { background: #3358c4; }
+button.secondary, .btn.secondary { background: #fff; color: var(--maroon); border: 1px solid var(--maroon); }
+button:hover { background: var(--maroon-dark); }
